@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useBooks } from '../context/BookContext';
-import { Book } from '../types';
+import { useBooks } from '../../../context/BookContext';
+import { Book } from '../../../types';
 
 export default function BookForm({ book, onClose }: { book?: Book; onClose: () => void }) {
   const { addBook, updateBook } = useBooks();
